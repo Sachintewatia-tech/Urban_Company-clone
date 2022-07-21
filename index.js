@@ -12,6 +12,7 @@ let data=[
 ];
 data.forEach(function(ele){
     let div=document.createElement("div");
+    div.setAttribute("class","image");
     let image=document.createElement("img");
     image.setAttribute("src",ele.img);
     let names=document.createElement("p");
