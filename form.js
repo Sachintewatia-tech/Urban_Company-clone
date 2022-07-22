@@ -18,17 +18,37 @@ function myfunc(event){
         window.location.href="index.html";
     }
 }
+// ============================================================================
 document.getElementById("hide").addEventListener("click",cutLoginPage)
 function cutLoginPage(){
     document.getElementById("cont").style.display = "none";
     }
+// =================================================================================
 
 document.getElementsByClassName("image")[0].addEventListener("click",womenSalon);
 
 function womenSalon(){
-    document.querySelector(".men").style.display = "block"
+    document.querySelector(".women").style.display = "block"
 }
 document.querySelector("#btn").addEventListener("click",backFunc);
 function backFunc(){
-    document.querySelector(".men").style.display="none";
+    document.querySelector(".women").style.display="none";
+}
+// ====================================================================================
+
+document.getElementsByClassName("image")[1].addEventListener("click",hairSalon);
+
+function hairSalon(){
+    document.querySelector(".hair").style.display = "block"
+}
+document.querySelector("#btn2").addEventListener("click",backFunction);
+function backFunction(){
+    document.querySelector(".hair").style.display="none";
+}
+
+// ====================================================================================
+
+document.getElementsByClassName("image")[2].addEventListener("click",therapyMen);
+function therapyMen(){
+    window.location.href="spa.html";
 }
