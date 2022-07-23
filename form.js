@@ -52,3 +52,28 @@ document.getElementsByClassName("image")[2].addEventListener("click",therapyMen)
 function therapyMen(){
     window.location.href="spa.html";
 }
+// ==================================================================
+document.getElementsByClassName("image")[3].addEventListener("click",salonMen);
+function salonMen(){
+    window.location.href="salonmen.html"
+}
+// ====================================================
+document.getElementsByClassName("image")[4].addEventListener("click",masagMen);
+function masagMen(){
+    window.location.href="massmen.html"
+}
+// ======================================================
+document.querySelector(".water").addEventListener("click",waterFunc);
+function waterFunc(){
+    window.location.href="water.html";
+}
+// ====================================================
+document.getElementsByClassName("image1")[1].addEventListener("click",furnFunc);
+function furnFunc(){
+    window.location.href="furn.html";
+}
+// ==================================================
+document.querySelector(".anti").addEventListener("click",antiFunc);
+function antiFunc(){
+    window.location.href="anti.html";
+}

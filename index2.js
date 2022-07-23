@@ -33,7 +33,7 @@ images.forEach(function(ele){
     let image=document.createElement("img");
     image.setAttribute("src",ele.img);
     div.append(image);
-    document.querySelector(".slide").append(div);
+    document.getElementsByClassName("slide")[0].append(div);
 })
 
 //================================================================================= /
@@ -49,12 +49,13 @@ let images1=[
 ];
 images1.forEach(function(ele){
     let div=document.createElement("div");
+    div.setAttribute("class","image1");
     let image=document.createElement("img");
     image.setAttribute("src",ele.img);
     let names=document.createElement("h4");
     names.innerText=ele.name;
     div.append(image,names);
-    document.querySelector(".slide2").append(div);
+    document.getElementsByClassName("slide")[1].append(div);
 })
 
 // =============================================================================
@@ -78,7 +79,7 @@ images3.forEach(function(ele){
     let para=document.createElement("p");
     para.innerText=ele.para;
     div.append(image,names,para);
-    document.querySelector(".appliance").append(div);
+    document.getElementsByClassName("slide")[3].append(div);
 })
 
 // ==================================================================================
@@ -102,7 +103,7 @@ images2.forEach(function(ele){
     let para=document.createElement("p");
     para.innerText=ele.para;
     div.append(image,names,para);
-    document.querySelector(".slide3").append(div);
+    document.getElementsByClassName("slide")[2].append(div);
 })
 
 // =============================================================================
@@ -126,7 +127,7 @@ images4.forEach(function(ele){
     let para=document.createElement("p");
     para.innerText=ele.para;
     div.append(image,names,para);
-    document.querySelector(".massage").append(div);
+    document.getElementsByClassName("slide")[4].append(div);
 })
 
 // ==============================================================================
@@ -148,7 +149,7 @@ images5.forEach(function(ele){
     let names=document.createElement("h4");
     names.innerText=ele.name;
     div.append(image,names);
-    document.querySelector(".pest").append(div);
+    document.getElementsByClassName("slide")[5].append(div);
 })
 
 // =================================================================================
@@ -170,7 +171,7 @@ images6.forEach(function(ele){
     let names=document.createElement("h4");
     names.innerText=ele.name;
     div.append(image,names);
-    document.querySelector(".luxury").append(div);
+    document.getElementsByClassName("slide")[6].append(div);
 })
 
 // =====================================================================================
@@ -192,5 +193,5 @@ images7.forEach(function(ele){
     let names=document.createElement("h4");
     names.innerText=ele.name;
     div.append(image,names);
-    document.querySelector(".home").append(div);
+    document.getElementsByClassName("slide")[7].append(div);
 })
